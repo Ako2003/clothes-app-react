@@ -17,19 +17,42 @@ function Backdrop(){
             position={[0, 0, -0.14]}
         >
             <RandomizedLight
-                amount={4}
+                amount={1}
                 radius={9}
-                intensity={0.55}
+                intensity={1}
                 ambient={0.25}
                 position={[5, 5, -10]}
             />
 
             <RandomizedLight
-                amount={4}
-                radius={5}
-                intensity={0.25}
+                amount={1}
+                radius={1}
+                intensity={1}
                 ambient={0.55}
-                position={[-5, 5, -9]}
+                position={[-2, -20, -10]}
+            />
+
+            <RandomizedLight
+                amount={1}
+                radius={9}
+                intensity={1}
+                ambient={0.55}
+                position={[10, -5, 5]}
+            />
+            <RandomizedLight
+                amount={1}
+                radius={1}
+                intensity={0.5}
+                // ambient={0.55}
+                position={[1, 10, 5]}
+            />
+
+            <RandomizedLight
+                amount={1}
+                radius={1}
+                intensity={0.5}
+                ambient={0.55}
+                position={[-2, -20, -10]}
             />
         </AccumulativeShadows>
     )

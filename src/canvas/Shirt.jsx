@@ -3,6 +3,8 @@ import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import { useFrame } from "@react-three/fiber";
 import { Decal, useGLTF, useTexture } from '@react-three/drei';
+import { OrbitControls } from "@react-three/drei";
+
 import state from "../store";
 
 function Shirt(){
@@ -26,6 +28,7 @@ function Shirt(){
                 material={materials.lambert1}
                 material-roughness={1}
                 dispose={null}
+                
             >
                 {snap.isFullTexture && (
                     <Decal 
